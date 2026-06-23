@@ -1,8 +1,9 @@
 #########################################################################################################################
-# This code is designed to generate hurdle models to fit population equivalent density and imidacloprid concentration   #
-# data described in Liu et al. (sub judice), Sources and Mitigation of Nationwide Parasiticide Water Pollution.         #
-# This code assumes that mean concentrations are being fit. It is straightforward to change 'mean' to 'median' in the   #
-# code below. This code includes plotting scripts used to produce figures in the paper and its supporting information.  #
+# This code is designed to generate Bayesian regression models to fit population equivalent density and imidacloprid    #
+# concentration data described in Liu et al. (sub judice), Sources and Mitigation of Nationwide Parasiticide Water      #
+# Pollution. This code assumes that mean concentrations are being fit. It is straightforward to change 'mean' to        #
+# 'median' in the code below. This code includes plotting scripts used to produce figures in the paper and its          #
+# supporting information.                                                                                               #
 #                                                                                                                       #
 # contact will.pearse@imperial.ac.uk or gareth.roberts@imperial.ac.uk for further information                           #
 #                                                                                                                       #
@@ -38,7 +39,7 @@ running_waters_samples_since2019 <- allSamples_2019OW |> filter(! Sample_Site_ID
 #################################################################################
 # Preparing averaged concentration data.                                        #
 #                                                                               #
-# Uncomment the following blocks of code to enable the hurdle models to be      # 
+# Uncomment the following blocks of code to enable the models to be      # 
 # run for each of the approaches used to substitute or remove concentrations    #
 # < LOD prior to running the models. Or you can run just one model, like        #
 # the uncommented example below that assumes measured concentrations < LOD      #
