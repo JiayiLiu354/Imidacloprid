@@ -3,7 +3,8 @@
 This repository contains the data processing and analysis code supporting the manuscript:
 
 > **Sources and Mitigation of Nationwide Parasiticide Water Pollution**\
-> *Submitted for peer review, 2026*
+> *Submitted for peer review, 2026*\
+> Preprint permanent URL: <https://hdl.handle.net/10044/1/130788>
 
 ## Structure
 
